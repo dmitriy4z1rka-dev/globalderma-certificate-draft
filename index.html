@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Подарочный сертификат — клиника GlobalDerma, Оренбург</title>
+<meta name="description" content="Подарочные сертификаты клиники медицины кожи GlobalDerma, Оренбург, пр. Победы, 89: HELEO4, чистка лица, любая сумма.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="yandex" content="noindex, nofollow">
+<meta name="theme-color" content="#f6f0f8">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Подарочный сертификат — GlobalDerma">
+<meta property="og:description" content="Подарок близкому к Новому году и любому празднику">
+<meta property="og:image" content="https://dmitriy4z1rka-dev.github.io/globalderma-certificate-draft/images/wordmark.jpg">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbf8fc;          /* фон страницы — почти белый с лиловым */
+    --paper:#ffffff;
+    --soft:#f3ecf6;        /* мягкий лиловый фон блоков */
+    --lilac:#d8c9df;       /* цвет лепестков логотипа */
+    --mauve:#a68fb3;       /* цвет надписи GlobalDerma */
+    --plum:#5d3d6c;        /* глубокий акцент: кнопки, заголовки */
+    --plum-dark:#472d54;
+    --ink:#2e2433;
+    --muted:#6c6073;
+    --line:#e7ddec;
+    --warn-bg:#fff6e6;
+    --warn-line:#f0d9a8;
+    --warn-ink:#6b4a12;
+    --ph:#c2185b;          /* цвет заглушек */
+    --radius:20px;
+    --shadow:0 1px 2px rgba(70,40,85,.05),0 14px 34px -18px rgba(70,40,85,.28);
+    --serif:"Forum", "Cormorant Garamond", Georgia, serif;
+    --sans:"Manrope", -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:56px}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+  section{padding:56px 0}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0;color:var(--plum-dark)}
+  h2{font-size:clamp(30px,6.4vw,46px);margin-bottom:12px}
+  .lead{color:var(--muted);max-width:600px;margin:0 0 28px;font-size:16.5px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mauve);font-weight:700;margin-bottom:12px}
+  .eyebrow img{width:18px;height:18px}
+
+  .ph{display:inline;border:1.5px dashed var(--ph);border-radius:6px;padding:1px 6px;color:var(--ph);background:#fdeef4;font-weight:700;font-size:.92em;line-height:1.7}
+  .ph-box{display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;border:2px dashed var(--ph);background:repeating-linear-gradient(45deg,#fdf1f6 0 12px,#fbe6ef 12px 24px);color:var(--ph);font-weight:700;font-size:14px;line-height:1.4}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;width:100%;
+    background:var(--plum);color:#fff;border:1.5px solid var(--plum);font:700 15px/1 var(--sans);letter-spacing:.02em;
+    padding:17px 26px;border-radius:999px;text-decoration:none;transition:background .2s,transform .15s,border-color .2s}
+  .btn:hover{background:var(--plum-dark);border-color:var(--plum-dark)}
+  .btn:active{transform:scale(.98)}
+  .btn:focus-visible,.chip:focus-visible,.input:focus-visible{outline:3px solid var(--lilac);outline-offset:2px}
+  .btn-ghost{background:transparent;color:var(--plum);border-color:var(--lilac)}
+  .btn-ghost:hover{background:var(--soft);border-color:var(--mauve);color:var(--plum-dark)}
+  .btn svg{flex:none}
+  .actions{display:grid;gap:10px}
+
+  .warn{display:flex;gap:12px;align-items:flex-start;background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-ink);border-radius:14px;padding:14px 16px;font-weight:700;font-size:15px;line-height:1.45}
+  .warn svg{flex:none;margin-top:2px}
+
+  /* ---------- шапка ---------- */
+  .top{position:sticky;top:0;z-index:20;background:rgba(251,248,252,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+  .brand img{width:38px;height:38px;flex:none}
+  .brand b{display:block;font:400 22px/1 var(--serif);color:var(--mauve);letter-spacing:.04em;white-space:nowrap}
+  .brand small{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mauve);opacity:.85;margin-top:3px;white-space:nowrap}
+  .top .tel{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;text-decoration:none;color:var(--plum);border:1.5px solid var(--lilac);border-radius:999px;padding:9px 14px;white-space:nowrap}
+  .top .tel span{display:none}
+
+  /* ---------- 1. первый экран ---------- */
+  .hero{position:relative;overflow:hidden;padding:36px 0 48px;
+    background:radial-gradient(90% 60% at 100% 0%,#efe3f4 0%,rgba(239,227,244,0) 70%),radial-gradient(80% 50% at 0% 100%,#f4eef7 0%,rgba(244,238,247,0) 70%),var(--bg)}
+  .hero::before{content:"";position:absolute;right:-120px;top:-80px;width:420px;height:420px;background:url(images/logo.png) center/contain no-repeat;opacity:.16;pointer-events:none}
+  .hero-grid{position:relative;display:grid;gap:34px}
+  .hero h1{font-size:clamp(38px,9.4vw,68px);margin-bottom:16px;letter-spacing:.005em}
+  .hero h1 em{font-style:normal;color:var(--mauve)}
+  .hero p{font-size:17px;color:var(--muted);margin:0 0 26px;max-width:520px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:20px;font-size:14px;color:var(--muted)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:7px}
+
+  /* макет сертификата */
+  .gift{position:relative;aspect-ratio:1.6/1;max-width:460px;width:100%;justify-self:center;border-radius:22px;overflow:hidden;color:var(--plum-dark);
+    background:linear-gradient(135deg,#ffffff 0%,#f4ecf7 45%,#e6d8ec 100%);box-shadow:0 30px 60px -28px rgba(93,61,108,.45),0 0 0 1px rgba(166,143,179,.25);transform:rotate(-2.5deg)}
+  .gift::before{content:"";position:absolute;inset:12px;border:1px solid rgba(166,143,179,.45);border-radius:14px}
+  .gift .flower{position:absolute;right:-34px;bottom:-40px;width:62%;opacity:.9}
+  .gift .in{position:absolute;inset:0;padding:26px 28px;display:flex;flex-direction:column}
+  .gift .wm{font:400 22px/1 var(--serif);color:var(--mauve);letter-spacing:.05em}
+  .gift .wm small{display:block;font:600 8.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-top:5px}
+  .gift .t{margin-top:auto;font:400 clamp(22px,6vw,30px)/1.05 var(--serif)}
+  .gift .s{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mauve);font-weight:700;margin-top:8px}
+
+  /* ---------- 2. сертификаты ---------- */
+  .certs{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cert-warn{margin:0 0 22px}
+  .grid{display:grid;gap:18px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+  .card .pic{position:relative;aspect-ratio:16/10;background:linear-gradient(160deg,#f6f1f8,#ebe1f0);overflow:hidden}
+  .card .pic img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;padding:8px 0 0}
+  .card .pic .ph-box{position:absolute;inset:0;border-radius:0;border-width:0 0 2px}
+  .card .pic.flowerpic{display:flex;align-items:center;justify-content:center}
+  .card .pic.flowerpic img{width:58%;height:auto;mix-blend-mode:normal;padding:0}
+  .badge{position:absolute;left:14px;top:14px;background:var(--plum);color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+  .body{padding:22px 20px 22px;display:flex;flex-direction:column;flex:1}
+  .kind{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mauve);font-weight:700}
+  .card h3{font-size:27px;margin:6px 0 10px}
+  .who{margin:0 0 18px;color:var(--muted);font-size:15.5px}
+  .price-row{margin-top:auto;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;margin-bottom:6px}
+  .price{font:400 40px/1 var(--serif);color:var(--plum-dark)}
+  .per{font-size:14px;color:var(--muted)}
+  .per s{color:#9a8ea0}
+  .src{font-size:12.5px;color:#8b7f91;margin:0 0 16px}
+  .card .btn{margin-top:4px}
+
+  .card.main{border:2px solid var(--plum);box-shadow:0 26px 50px -24px rgba(93,61,108,.5)}
+  .card.main .pic{aspect-ratio:16/11;background:linear-gradient(160deg,#f1e8f5,#e2d2ea)}
+  .card.main .price{font-size:52px}
+  .save{display:inline-block;background:var(--soft);color:var(--plum);border-radius:8px;padding:4px 9px;font-size:13px;font-weight:700}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+  .chip{border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 15px;font:700 14px var(--sans);color:var(--plum);cursor:pointer}
+  .chip.on,.chip:hover{border-color:var(--mauve);background:var(--soft)}
+
+  .rules{margin-top:22px;display:grid;gap:10px}
+  .rule{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border-radius:14px;padding:14px 16px;font-size:15px;color:var(--ink)}
+  .rule svg{flex:none;color:var(--plum);margin-top:3px}
+
+  /* ---------- 3. шаги ---------- */
+  .steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:s}
+  .steps li{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 20px 20px 76px;counter-increment:s}
+  .steps li::before{content:counter(s);position:absolute;left:18px;top:18px;width:42px;height:42px;border-radius:50%;background:var(--soft);color:var(--plum);display:flex;align-items:center;justify-content:center;font:400 24px/1 var(--serif);border:1px solid var(--lilac)}
+  .steps b{display:block;font:400 22px/1.15 var(--serif);color:var(--plum-dark);margin-bottom:4px}
+  .steps p{margin:0;color:var(--muted);font-size:15px}
+
+  /* ---------- 4. о клинике ---------- */
+  .about{background:var(--soft)}
+  .about-grid{display:grid;gap:26px}
+  .interior{border-radius:var(--radius);aspect-ratio:4/3;min-height:200px}
+  .facts{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+  .facts li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+  .facts li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--mauve);margin-top:9px}
+  .docs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:34px}
+  .doc{margin:0;background:var(--paper);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+  .doc img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 18%}
+  .doc figcaption{padding:14px 16px 16px}
+  .doc b{display:block;font:400 21px/1.15 var(--serif);color:var(--plum-dark)}
+  .doc span{display:block;color:var(--muted);font-size:14px;margin-top:6px;line-height:1.45}
+  .docs-note{font-size:12.5px;color:#8b7f91;margin:12px 0 0}
+
+  /* ---------- 5. форма ---------- */
+  .order .box{max-width:620px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:26px 18px}
+  .demo{display:flex;gap:10px;align-items:center;background:#eef4ff;border:1px solid #cddcf5;color:#28456e;border-radius:12px;padding:10px 14px;font-size:14px;font-weight:600;margin:0 0 18px}
+  .field{display:block;margin-bottom:14px}
+  .field label{display:block;font-size:14px;font-weight:700;margin-bottom:7px}
+  .field label span{font-weight:500;color:#8b7f91}
+  .input{width:100%;font:500 17px var(--sans);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;outline:none;-webkit-appearance:none;appearance:none;transition:border-color .2s,box-shadow .2s}
+  .input:focus{border-color:var(--mauve);box-shadow:0 0 0 4px rgba(216,201,223,.5)}
+  .input.invalid{border-color:#c62828}
+  select.input{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%235d3d6c' stroke-width='1.8'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+  input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+  input[type=number]{-moz-appearance:textfield}
+  .consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--muted);margin:6px 0 14px;cursor:pointer}
+  .consent input{flex:none;width:22px;height:22px;margin:0;accent-color:var(--plum);cursor:pointer}
+  .consent a{color:var(--plum)}
+  .consent.invalid{color:#c62828}
+  .err{color:#c62828;font-size:14px;min-height:20px;margin:0 0 10px}
+  .hint{text-align:center;color:var(--muted);font-size:14px;margin:14px 0 0}
+  .or{display:flex;align-items:center;gap:12px;color:#8b7f91;font-size:13px;margin:18px 0 12px}
+  .or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+  .ok{display:none;text-align:center;padding:16px 0}
+  .ok .tick{width:64px;height:64px;border-radius:50%;background:var(--soft);color:var(--plum);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+  .ok h3{font-size:34px;margin-bottom:8px}
+  .hidden{display:none}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+  /* ---------- 6. контакты ---------- */
+  .contacts{background:var(--paper);border-top:1px solid var(--line)}
+  .c-grid{display:grid;gap:14px}
+  .c-item{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .c-item small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mauve);font-weight:700;margin-bottom:4px}
+  .c-item a{color:var(--plum);font-weight:700}
+  .c-item p{margin:0}
+
+  footer{background:#2f2236;color:#d9cde0;padding:34px 0 30px;font-size:13.5px}
+  footer .wrap{display:grid;gap:16px}
+  footer .warn{background:#fff6e6;font-size:15px}
+  footer b{color:#fff}
+  .req{display:grid;gap:4px;line-height:1.55}
+  .req .t{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:700;margin-bottom:4px}
+  footer .ph{background:#fff0f6}
+  .f-links{display:flex;flex-wrap:wrap;gap:8px 20px}
+  .f-links a{color:#fff}
+
+  /* плашка черновика */
+  .draft{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#c2185b;color:#fff;text-align:center;font:700 14px/1.3 var(--sans);padding:12px 16px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -6px 18px -8px rgba(0,0,0,.3)}
+
+  /* ---------- планшет и десктоп ---------- */
+  @media (min-width:640px){
+    .wrap{padding:0 28px}
+    .actions{display:flex;flex-wrap:wrap}
+    .actions .btn{width:auto}
+    .top .tel span{display:inline}
+    .grid{grid-template-columns:1fr 1fr}
+    .card.main{grid-column:1/-1;flex-direction:row}
+    .card.main .pic{flex:0 0 46%;aspect-ratio:auto}
+    .card.main .body{padding:30px 30px}
+    .card.main .btn{width:auto;align-self:flex-start}
+    .steps{grid-template-columns:repeat(3,1fr)}
+    .c-grid{grid-template-columns:repeat(3,1fr)}
+    .order .box{padding:36px 34px}
+    .rules{grid-template-columns:1fr 1fr}
+  }
+  @media (min-width:960px){
+    section{padding:84px 0}
+    .hero{padding:64px 0 84px}
+    .hero-grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .about-grid{grid-template-columns:1fr 1fr;align-items:center;gap:48px}
+    .docs{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://globalderma.ru/" target="_blank" rel="noopener">
+      <img src="images/logo.png" alt="Логотип GlobalDerma">
+      <span><b>GlobalDerma</b><small>Клиника медицины кожи</small></span>
+    </a>
+    <a class="tel" href="tel:+79873466888" aria-label="Позвонить: 8 (987) 346-68-88">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+      <span>8 (987) 346-68-88</span>
+    </a>
+  </div>
+</header>
+
+<!-- 1. Первый экран -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><img src="images/logo.png" alt="">Подарочный сертификат</div>
+      <h1>Подарок близкому — <em>время для&nbsp;себя и&nbsp;своей кожи</em></h1>
+      <p>К&nbsp;Новому году, дню рождения или любому празднику. Выберите сертификат, оставьте заявку — администратор клиники перезвонит и&nbsp;всё оформит.</p>
+      <div class="actions">
+        <a class="btn" href="#certificates">Выбрать сертификат
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="tel:+79873466888">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Позвонить
+        </a>
+      </div>
+      <div class="hero-meta">
+        <span>Оренбург, пр.&nbsp;Победы,&nbsp;89</span>
+        <span>Пн–Сб 9:00–20:00</span>
+      </div>
+    </div>
+    <div class="gift" aria-hidden="true">
+      <img class="flower" src="images/logo.png" alt="">
+      <div class="in">
+        <div class="wm">GlobalDerma<small>Клиника медицины кожи</small></div>
+        <div class="t">Подарочный<br>сертификат</div>
+        <div class="s">HELEO4 · курс 6 сеансов</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Сертификаты -->
+<section class="certs" id="certificates">
+  <div class="wrap">
+    <div class="eyebrow">Сертификаты</div>
+    <h2>Выберите подарок</h2>
+    <p class="lead">Цены по&nbsp;прайсу клиники от&nbsp;01.06.2026. Сертификат действует <span class="ph">[СРОК ДЕЙСТВИЯ]</span>.</p>
+
+    <div class="warn cert-warn" role="note">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+      Имеются противопоказания. Необходима консультация специалиста
+    </div>
+
+    <div class="grid">
+
+      <!-- Главный -->
+      <article class="card main">
+        <div class="pic">
+          <span class="badge">Выгоднее всего</span>
+          <img src="images/heleo.png" alt="Аппарат HELEO4 для фотодинамической терапии" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="kind">Курс · 6 сеансов</span>
+          <h3>Фотодинамическая терапия HELEO4</h3>
+          <p class="who">Сеансы света на&nbsp;аппарате HELEO4 в&nbsp;кабинете врача. Подойдёт тому, кто давно собирался заняться кожей, но&nbsp;всё откладывал: шесть визитов уже оплачены.</p>
+          <div class="price-row">
+            <span class="price">22&nbsp;950&nbsp;₽</span>
+            <span class="save">3&nbsp;825&nbsp;₽ за&nbsp;сеанс</span>
+          </div>
+          <p class="src">вместо <s>4&nbsp;500&nbsp;₽</s> за&nbsp;сеанс по&nbsp;прайсу от&nbsp;01.06.2026</p>
+          <a class="btn" href="#order" data-pick="heleo6">Оформить</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="pic"><img src="images/heleo.png" alt="Аппарат HELEO4" loading="lazy"></div>
+        <div class="body">
+          <span class="kind">1 сеанс</span>
+          <h3>HELEO4, один сеанс</h3>
+          <p class="who">Чтобы познакомиться с&nbsp;процедурой. Хороший подарок подруге, сестре или&nbsp;коллеге.</p>
+          <div class="price-row"><span class="price">4&nbsp;500&nbsp;₽</span></div>
+          <p class="src">по&nbsp;прайсу от&nbsp;01.06.2026</p>
+          <a class="btn" href="#order" data-pick="heleo1">Оформить</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="pic"><div class="ph-box">[ФОТО: ЧИСТКА ЛИЦА —<br>на сайте клиники нет]</div></div>
+        <div class="body">
+          <span class="kind">Уход</span>
+          <h3>Косметологическая чистка лица</h3>
+          <p class="who">Понятный и&nbsp;приятный подарок для тех, кто любит ухаживать за&nbsp;собой.</p>
+          <div class="price-row"><span class="price">3&nbsp;000&nbsp;₽</span></div>
+          <p class="src">по&nbsp;прайсу от&nbsp;01.06.2026</p>
+          <a class="btn" href="#order" data-pick="clean">Оформить</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="pic flowerpic"><img src="images/logo.png" alt="" loading="lazy"></div>
+        <div class="body">
+          <span class="kind">Свободный номинал</span>
+          <h3>На любую сумму</h3>
+          <p class="who">Сумму выбираете вы, а&nbsp;процедуру получатель подберёт вместе с&nbsp;врачом. Когда не&nbsp;знаете, что именно подарить.</p>
+          <div class="chips" role="group" aria-label="Быстрый выбор суммы">
+            <button class="chip" type="button" data-amount="3000">3&nbsp;000&nbsp;₽</button>
+            <button class="chip" type="button" data-amount="5000">5&nbsp;000&nbsp;₽</button>
+            <button class="chip" type="button" data-amount="10000">10&nbsp;000&nbsp;₽</button>
+          </div>
+          <p class="src">Минимальная сумма: <span class="ph">[МИН. СУММА]</span></p>
+          <a class="btn" href="#order" data-pick="any">Оформить</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="rules">
+      <div class="rule">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        <span>Процедура проводится после консультации врача. При противопоказаниях сертификат можно обменять на&nbsp;другую услугу.</span>
+      </div>
+      <div class="warn" role="note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+        Имеются противопоказания. Необходима консультация специалиста
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Как это работает -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Как это работает</div>
+    <h2>Три шага</h2>
+    <p class="lead">Ничего не&nbsp;нужно оплачивать на&nbsp;сайте.</p>
+    <ol class="steps">
+      <li><b>Выбрали</b><p>Сертификат на&nbsp;процедуру или на&nbsp;любую сумму.</p></li>
+      <li><b>Оставили заявку</b><p>Имя и&nbsp;телефон в&nbsp;форме ниже — это займёт минуту.</p></li>
+      <li><b>Администратор перезвонил</b><p>Ответит на&nbsp;вопросы, расскажет об&nbsp;оплате и&nbsp;оформит сертификат.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4. О клинике и врачах -->
+<section class="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="ph-box interior">[ФОТО ИНТЕРЬЕРА КЛИНИКИ —<br>на сайте клиники нет]</div>
+      <div>
+        <div class="eyebrow">О клинике</div>
+        <h2>GlobalDerma</h2>
+        <p class="lead" style="margin-bottom:0">Клиника косметологии и&nbsp;дерматологии в&nbsp;центре Оренбурга. Приём ведут врачи-дерматовенерологи и&nbsp;косметологи.</p>
+        <ul class="facts">
+          <li>Медицинская лицензия Л041-01022-56/00362323</li>
+          <li>Аппаратная косметология: HELEO4, Vivace, Сургитрон</li>
+          <li>Консультации косметолога, дерматолога и&nbsp;трихолога</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="docs">
+      <figure class="doc">
+        <img src="images/doc-saitkulova.jpg" alt="Саиткулова Лилия Халитовна" loading="lazy">
+        <figcaption><b>Саиткулова Лилия Халитовна</b><span>Главный врач, врач-дерматовенеролог, детский дерматолог, косметолог. Стаж более 11&nbsp;лет</span></figcaption>
+      </figure>
+      <figure class="doc">
+        <img src="images/doc-kasenova.jpg" alt="Касенова Эльмира Уралбайевна" loading="lazy">
+        <figcaption><b>Касенова Эльмира Уралбайевна</b><span>Врач-дерматовенеролог, косметолог. Стаж более 12&nbsp;лет</span></figcaption>
+      </figure>
+      <figure class="doc">
+        <img src="images/doc-medvedeva.jpg" alt="Медведева Виолетта Андреевна" loading="lazy">
+        <figcaption><b>Медведева Виолетта Андреевна</b><span>Врач-дерматовенеролог. Стаж более 11&nbsp;лет</span></figcaption>
+      </figure>
+    </div>
+    <p class="docs-note">Фото и&nbsp;данные врачей — с&nbsp;сайта globalderma.ru</p>
+  </div>
+</section>
+
+<!-- 5. Форма -->
+<section class="order" id="order">
+  <div class="wrap">
+    <div class="box">
+      <div id="formWrap">
+        <div class="eyebrow">Заявка</div>
+        <h2 style="font-size:clamp(30px,6vw,40px)">Оформить сертификат</h2>
+        <p class="demo" role="note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Демо-режим: заявка пока никуда не&nbsp;отправляется</p>
+        <form id="certForm" novalidate>
+          <div class="hp" aria-hidden="true"><label>Не заполняйте это поле <input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="field">
+            <label for="fName">Имя</label>
+            <input class="input" id="fName" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+          </div>
+          <div class="field">
+            <label for="fPhone">Телефон</label>
+            <input class="input" id="fPhone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___-__-__">
+          </div>
+          <div class="field">
+            <label for="fType">Сертификат</label>
+            <select class="input" id="fType" name="certificate">
+              <option value="heleo6">HELEO4, курс 6 сеансов — 22 950 ₽</option>
+              <option value="heleo1">HELEO4, 1 сеанс — 4 500 ₽</option>
+              <option value="clean">Косметологическая чистка лица — 3 000 ₽</option>
+              <option value="any">На любую сумму</option>
+            </select>
+          </div>
+          <div class="field hidden" id="fAmountWrap">
+            <label for="fAmount">Сумма, ₽</label>
+            <input class="input" id="fAmount" name="amount" type="number" inputmode="numeric" min="1" step="100" placeholder="5 000">
+          </div>
+          <label class="consent" id="consentWrap">
+            <input type="checkbox" id="fConsent" name="consent" value="yes">
+            <span>Я&nbsp;даю согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="https://globalderma.ru/p/109834d/" target="_blank" rel="noopener">Политикой обработки персональных данных</a></span>
+          </label>
+          <div class="err" id="formErr" aria-live="polite"></div>
+          <button class="btn" type="submit">Оставить заявку</button>
+          <p class="hint">Администратор перезвонит и&nbsp;оформит сертификат</p>
+        </form>
+        <div class="or">или</div>
+        <a class="btn btn-ghost" href="tel:+79873466888">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Позвонить: 8 (987) 346-68-88
+        </a>
+      </div>
+      <div class="ok" id="ok" role="status">
+        <div class="tick"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Спасибо!</h3>
+        <p class="lead" style="margin:0 auto" id="okText">Администратор перезвонит и&nbsp;оформит сертификат.</p>
+        <p class="demo" style="margin:18px auto 0;max-width:420px;justify-content:center">Демо-режим: заявка никуда не&nbsp;отправлена</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Контакты -->
+<section class="contacts" id="contacts">
+  <div class="wrap">
+    <div class="eyebrow">Контакты</div>
+    <h2>Как нас найти</h2>
+    <p class="lead">Клиника GlobalDerma, Оренбург</p>
+    <div class="c-grid">
+      <div class="c-item"><small>Адрес</small><p>г.&nbsp;Оренбург, пр.&nbsp;Победы,&nbsp;89<br>1&nbsp;этаж, правая входная группа</p><p style="margin-top:6px"><a href="https://yandex.ru/maps/-/CHc1fQ0r" target="_blank" rel="noopener">Маршрут в&nbsp;Яндекс Картах</a></p></div>
+      <div class="c-item"><small>Часы работы</small><p>Пн–Сб: 9:00–20:00, по&nbsp;предварительной записи<br>Вс: выходной</p></div>
+      <div class="c-item"><small>Телефон</small><p><a href="tel:+79873466888">8 (987) 346-68-88</a></p></div>
+    </div>
+    <div class="actions" style="margin-top:20px">
+      <a class="btn" href="tel:+79873466888">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+        Позвонить
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="warn" role="note">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg>
+      Имеются противопоказания. Необходима консультация специалиста
+    </div>
+    <p style="margin:0">Процедура проводится после консультации врача. При противопоказаниях сертификат можно обменять на&nbsp;другую услугу.</p>
+    <div class="req">
+      <span class="t">Сведения о медицинской организации</span>
+      <span><b>ООО «Глобал Дерма»</b> · ИНН 5612174718 · ОГРН 1205600004092</span>
+      <span>Лицензия на&nbsp;осуществление медицинской деятельности Л041-01022-56/00362323</span>
+      <span>Юридический адрес: <span class="ph">[ЮРИДИЧЕСКИЙ АДРЕС]</span></span>
+      <span>Адрес оказания услуг: г.&nbsp;Оренбург, пр.&nbsp;Победы,&nbsp;89</span>
+    </div>
+    <div class="f-links">
+      <a href="https://globalderma.ru/p/109834d/" target="_blank" rel="noopener">Политика обработки персональных данных</a>
+      <a href="https://globalderma.ru/" target="_blank" rel="noopener">globalderma.ru</a>
+    </div>
+  </div>
+</footer>
+
+<div class="draft" role="note">Черновик, цены и условия уточняются</div>
+
+<script>
+  const type = document.getElementById('fType');
+  const amtWrap = document.getElementById('fAmountWrap');
+  const amt = document.getElementById('fAmount');
+  const fmt = n => Number(n).toLocaleString('ru-RU');
+
+  function syncType(){
+    const any = type.value === 'any';
+    amtWrap.classList.toggle('hidden', !any);
+    amt.required = any;
+  }
+  type.addEventListener('change', syncType);
+
+  function goOrder(){
+    document.getElementById('order').scrollIntoView({behavior:'smooth'});
+    setTimeout(() => document.getElementById('fName').focus({preventScroll:true}), 650);
+  }
+
+  const NAMES = {
+    heleo6: 'HELEO4, курс 6 сеансов — 22 950 ₽',
+    heleo1: 'HELEO4, 1 сеанс — 4 500 ₽',
+    clean: 'Косметологическая чистка лица — 3 000 ₽'
+  };
+
+  let pickedAmount = '';
+  const chips = document.querySelectorAll('.chip');
+  chips.forEach(c => c.addEventListener('click', () => {
+    pickedAmount = c.dataset.amount;
+    chips.forEach(x => x.classList.toggle('on', x === c));
+  }));
+
+  document.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', e => {
+    e.preventDefault();
+    type.value = b.dataset.pick; syncType();
+    if (b.dataset.pick === 'any' && pickedAmount) amt.value = pickedAmount;
+    goOrder();
+  }));
+
+  /* ================= ОТПРАВКА ЗАЯВОК =================
+     mode: 'demo' — заявки никуда не уходят, только экран «Спасибо» (сейчас).
+     Для запуска: 'web3forms' (ключ на почту клиники), 'formsubmit' (email) или 'telegram' (бот + chat_id).
+  */
+  const FORM_CONFIG = {
+    mode: 'demo',
+    web3forms:  { accessKey: '' },
+    formsubmit: { email: '' },
+    telegram:   { botToken: '', chatId: '' },
+    subject: 'Заявка на подарочный сертификат — GlobalDerma'
+  };
+
+  async function postJSON(url, body){
+    const r = await fetch(url, { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body:JSON.stringify(body) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || j.success === false || j.success === 'false' || j.ok === false) throw new Error(j.message || j.description || ('HTTP ' + r.status));
+    return j;
+  }
+  async function sendLead(d){
+    const c = FORM_CONFIG;
+    const fields = { 'Имя': d.name, 'Телефон': d.phone, 'Сертификат': d.certificate, 'Согласие на обработку ПД': 'дано ' + d.consentAt };
+    switch (c.mode) {
+      case 'web3forms':
+        return postJSON('https://api.web3forms.com/submit', Object.assign({ access_key: c.web3forms.accessKey, subject: c.subject }, fields));
+      case 'formsubmit':
+        return postJSON('https://formsubmit.co/ajax/' + encodeURIComponent(c.formsubmit.email), Object.assign({ _subject: c.subject, _template: 'table', _captcha: 'false' }, fields));
+      case 'telegram':
+        return postJSON('https://api.telegram.org/bot' + c.telegram.botToken + '/sendMessage', {
+          chat_id: c.telegram.chatId, disable_web_page_preview: true,
+          text: ['Заявка на подарочный сертификат'].concat(Object.entries(fields).map(([k, v]) => k + ': ' + v)).join('\n')
+        });
+      default:
+        return { demo: true };
+    }
+  }
+
+  const form = document.getElementById('certForm');
+  const fErr = document.getElementById('formErr');
+  const submitBtn = form.querySelector('[type=submit]');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const phoneDigits = form.phone.value.replace(/\D/g, '');
+    const consent = document.getElementById('fConsent');
+    const consentWrap = document.getElementById('consentWrap');
+    form.querySelectorAll('.input').forEach(i => i.classList.remove('invalid'));
+    consentWrap.classList.remove('invalid');
+    if (!name) { fErr.textContent = 'Укажите имя'; form.name.classList.add('invalid'); form.name.focus(); return; }
+    if (phoneDigits.length < 10) { fErr.textContent = 'Укажите телефон'; form.phone.classList.add('invalid'); form.phone.focus(); return; }
+    if (type.value === 'any' && !(+amt.value > 0)) { fErr.textContent = 'Укажите сумму сертификата'; amt.classList.add('invalid'); amt.focus(); return; }
+    if (!consent.checked) { fErr.textContent = 'Нужно согласие на обработку персональных данных'; consentWrap.classList.add('invalid'); consent.focus(); return; }
+    fErr.textContent = '';
+    if (form.website.value) return;
+    const what = type.value === 'any' ? 'Сертификат на ' + fmt(amt.value) + ' ₽' : NAMES[type.value];
+    const label = submitBtn.textContent;
+    submitBtn.disabled = true; submitBtn.textContent = 'Отправляем…';
+    try {
+      await sendLead({ name, phone: form.phone.value.trim(), certificate: what, consentAt: new Date().toISOString() });
+    } catch (err) {
+      console.error(err);
+      fErr.innerHTML = 'Не удалось отправить заявку. Позвоните: <a href="tel:+79873466888">8 (987) 346-68-88</a>';
+      submitBtn.disabled = false; submitBtn.textContent = label;
+      return;
+    }
+    document.getElementById('okText').textContent = name + ', заявка принята: ' + what + '. Администратор перезвонит и оформит сертификат.';
+    document.getElementById('formWrap').style.display = 'none';
+    document.getElementById('ok').style.display = 'block';
+  });
+</script>
+</body>
+</html>
